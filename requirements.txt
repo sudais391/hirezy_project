@@ -1,0 +1,6 @@
+streamlit==1.39.0
+streamlit-option-menu
+psycopg2
+plotly
+pandas
+openai==0.28
