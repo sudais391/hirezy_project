@@ -1,6 +1,6 @@
 streamlit==1.39.0
 streamlit-option-menu
-psycopg2-binary
+psycopg2-binary==2.9.10
 plotly
 pandas
 openai==0.28
