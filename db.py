@@ -1,18 +1,21 @@
 import psycopg2
 
 class Database:
-    def __init__(self, host="aws-0-ap-southeast-1.pooler.supabase.com", database="postgres", user="postgres.gzsvrlslnlcikuxeiqyu ", password="hirezy3421$", port="6543"):
+    def __init__(self, host="aws-0-ap-southeast-1.pooler.supabase.com", database="postgres", user="postgres.gzsvrlslnlcikuxeiqyu", password="hirezy3421$", port="6543"):
         self.host = host
         self.database = database
         self.user = user
         self.password = password
+        self.port = port
+
 
     def connect(self):
         return psycopg2.connect(
             host=self.host,
             database=self.database,
             user=self.user,
-            password=self.password
+            password=self.password,
+            port=self.port
         )
 
     def initialize(self):
